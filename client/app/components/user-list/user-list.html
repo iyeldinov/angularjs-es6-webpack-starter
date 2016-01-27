@@ -1,0 +1,26 @@
+<h1>My friends </h1>
+
+<div class="card" ng-repeat="user in $ctrl.users">
+  <div class="card-block">
+    <div class="row">
+      <div class="col-sm-2">
+        <img ng-src="{{user.photo}}" alt="Card image" class="img-fluid">
+      </div>
+      <div class="col-sm-8">
+        <h5 class="card-title m-b-0"><a ui-sref="user-details({ userId: user.id })" ng-bind="user.name"></a></h5>
+        <div ng-bind="user.status" class="text-muted m-b-1"></div>
+        <p class="card-text">
+          <span ng-bind="user.adress"></span>
+        </p>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" class="btn btn-link btn-sm" ng-click="$ctrl.deleteUser(user)">Unfriend</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div ng-if="$ctrl.users.length < 1">
+  We are sorry, mate. But you don't have friends...
+</div>
