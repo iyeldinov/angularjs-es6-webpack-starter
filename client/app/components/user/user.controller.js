@@ -2,6 +2,7 @@
 class UserController {
 
   constructor() {
+    //CODE...
   }
 }
 
