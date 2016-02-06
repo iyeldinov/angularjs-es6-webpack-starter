@@ -1,9 +1,15 @@
-## List of commands
+# A complete ES6 Angular 1.5+ component based starter kit
+[Angular](https://angularjs.org), [ES6](https://git.io/es6features), and [Webpack](http://webpack.github.io/)
+
+## TL;DR
+
+Use with `nodejs@4.2.1`, clone the repo, `npm install` and 
+
 `npm run serve` - starts webpack-dev-server on localhost:8080 and watches for changes
 
-`npm test` - run karma tests
+Read about Angular 1.5 Component ([guide by Todd Motto](https://toddmotto.com/exploring-the-angular-1-5-component-method)).
 
- [Angular](https://angularjs.org), [ES6](https://git.io/es6features), and [Webpack](http://webpack.github.io/)
+Don't forget to run the tests `npm test`. Karma configured to generate coverage in `coverage` folder
 
 ## Testing Setup
 * Karma
